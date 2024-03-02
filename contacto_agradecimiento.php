@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Muchas Gracias!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <header class="header">
     <nav class="MenuSuperior">
         <ul>
@@ -20,13 +19,7 @@
 <body>
     <div class="main-generico">
 
-        <form action="bk/contacto_F.php" method="post" class="form-contacto">
-            <input type="text" placeholder="Nombre" name="nombre" required>
-            <input type="text" placeholder="Apellido" name="apellido" required>
-            <input type="text" placeholder="Correo" name="correo" required>
-            <input type="text" placeholder="Mensaje" name="mensaje" required>
-            <button type="submit" class="enviar" >Enviar</button>
-        </form>
+        <h1>Muchas gracias por tu mensaje!</h1>
 
     </div>
 </body>
