@@ -1,0 +1,245 @@
+html{
+    font-size: medium;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1024px;
+    margin: 0 auto; 
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: black;
+
+}
+.MenuSuperior {
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    font-size: medium;
+      
+}
+
+.MenuSuperior a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.MenuSuperior ul{
+    list-style-type: none;
+}
+
+.MenuSuperior li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellow;
+    height: 100vh;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.Seccion{
+    padding: 1rem;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    font-size: medium;
+    flex-grow: 1;
+    margin: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Seccion img {
+    width: 300px;
+    height: auto;
+}
+
+.Lateral{
+    background-color: black;
+    color: yellow;
+    font-size: medium;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    }
+
+.Lateral ul {
+    color: yellow;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+}
+
+.Lateral ul li {
+   margin-bottom: 20px;
+   list-style-type: none;;
+}
+
+.Lateral ul li:hover{
+    background-color: yellow;
+        border-radius: 80px;
+        transition: background-color 0.3s ease-in-out;
+}
+
+.Lateral ul li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.Lateral ul li a:hover{
+    color: black;
+
+}
+
+
+footer{
+    background-color:black;
+    padding: 0.3rem;
+    text-align: center;
+    color: yellow;
+}
+
+.main-generico {
+    background-color:yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+   justify-content:center;
+   height:100vh;
+}
+
+.main-generico h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*MEDIA QUERY PARA EL RESPONSIVE*/
+
+@media (max-width: 992px) {
+  .Seccion {
+    width: 70%;
+  }
+  .Lateral {
+    width: 20%;
+    margin-top:0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+  .Lateral {
+    width: 25%;
+  }
+  .Seccion img {
+        width: 250px;
+  }
+}
+
+/*Se adapta a pantallas verticales*/
+
+@media (max-width: 576px) {
+    .body {
+        font-size: 14px;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .Secciones {
+        margin-top: 70px;
+    }
+    
+    .Seccion h2 {
+        margin-top: 100px;
+    }
+
+    .Lateral {
+        position:fixed;
+        top:40px;
+        width:100%;
+        font-size: small;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    
+    .Lateral ul {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom:3px;
+        margin-top:3px;
+    }
+    
+    .Lateral ul li {
+        padding-right:20px;
+        padding-left:20px;
+    }
+    
+    .Lateral h3 {
+        display: none;
+    }
+    
+    .Secciones img {
+        width: 200px;
+    }
+    
+    .main {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    
+    .main-generico {
+        margin-top:40px;
+    }
+}
+
+@media (max-width: 480px){
+    .Lateral ul li {
+        padding-right:0px;
+        padding-left:0px;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: black;
+
+    }
+}
+
+
