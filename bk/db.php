@@ -3,6 +3,7 @@
 //Funcion para establecer la conexion a la base de datos.
 function conectar () {
     //Declaracion de variables para la conexion. 
+    //IMPORTANTE: Cambiar los valores segun la base de datos creada en el hosting
     $servername = "localhost" ;
     $username = "root";
     $password = "";
